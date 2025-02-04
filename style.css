@@ -59,6 +59,7 @@ nav button {
   border-radius: 0.3rem;
   padding: 0.5rem;
   margin-right: 1rem;
+  font-weight: bolder;
 }
 
 .red-btn {
@@ -76,7 +77,7 @@ nav button {
   color: #ffffff;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100% - 62px);
   justify-content: center;
   align-items: center;
   gap: 1rem;
@@ -104,12 +105,47 @@ input {
   color: #ffffff;
   opacity: 0.5;
   height: 3.1rem;
-  color: pink;
+  color: #ffffff;
   width: 30rem;
   border-radius: 0.3rem;
+  padding: 1rem;
 }
 
 input::placeholder {
   color: #ffffff;
-  padding: 1rem;
+}
+
+.separation {
+  height: 0.5rem;
+  background-color: grey;
+}
+
+.first {
+  display: flex;
+  color: #ffffff;
+  justify-content: center;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+.first > div > span {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+
+.sec-img {
+  position: relative;
+}
+
+.sec-img img {
+  width: 30vw;
+  position: relative;
+  z-index: 10;
+}
+
+.sec-img video {
+  position: absolute;
+  top: 51px;
+  right: 0;
 }
